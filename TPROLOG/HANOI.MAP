@@ -1,0 +1,53 @@
+
+
+ Start  Stop   Length Name                   Class
+ 00000H 00001H 00002H BASE                   
+ 00002H 00123H 00122H _PROG                  
+ 00130H 00792H 00663H _PROG                  
+ 00793H 022EEH 01B5CH _PROG                  
+ 022EFH 0283EH 00550H _PROG                  
+ 0283FH 030A5H 00867H _PROG                  
+ 030A6H 030E4H 0003FH _PROG                  
+ 030E5H 03349H 00265H _PROG                  
+ 0334AH 0362EH 002E5H _PROG                  
+ 0362FH 044FBH 00ECDH _PROG                  
+ 044FCH 046D9H 001DEH _PROG                  
+ 046DAH 046DAH 00000H _PROG                  
+ 046DAH 0471CH 00043H _PROG                  
+ 0471DH 05BA1H 01485H _PROG                  
+ 05BA2H 06590H 009EFH _PROG                  
+ 065A0H 06BE3H 00644H ZDPOPNS                
+ 06BF0H 07483H 00894H ZDPFNCS                
+ 07484H 0767BH 001F8H _PROG                  
+ 0767CH 076D6H 0005BH _PROG                  
+ 076D7H 0783FH 00169H _PROG                  
+ 07840H 078ACH 0006DH _PROG                  
+ 078ADH 07921H 00075H _PROG                  
+ 07922H 0793EH 0001DH _PROG                  
+ 0793FH 079F1H 000B3H _PROG                  
+ 079F2H 07A62H 00071H _PROG                  
+ 07A63H 07AA3H 00041H _PROG                  
+ 07AA4H 07AC1H 0001EH _PROG                  
+ 07AC2H 07AD6H 00015H _PROG                  
+ 07AD7H 07C6DH 00197H _PROG                  
+ 07C6EH 07D0DH 000A0H _PROG                  
+ 07D0EH 07D95H 00088H _PROG                  
+ 07D96H 07DD3H 0003EH _PROG                  
+ 07DD4H 07EE0H 0010DH _PROG                  
+ 07EE1H 07EFDH 0001DH _PROG                  
+ 07EFEH 08317H 0041AH _PROG                  
+ 08318H 08349H 00032H _PROG                  
+ 0834AH 083F8H 000AFH _PROG                  
+ 083F9H 09F79H 01B81H _PROG                  
+ 09F7AH 09F8EH 00015H _PROG                  
+ 09F8FH 09F8FH 00001H _PROG                  
+ 09F90H 0AB3DH 00BAEH DATA                   DATA
+ 0AB40H 0AC3FH 00100H STACK                  DATA
+ 0AC40H 0AE0DH 001CEH CONST                  CONST
+ 0AE10H 0AEB7H 000A8H SYMB                   SYMB
+
+ Origin   Group
+ 09F9:0   DGROUP
+ 0AE1:0   SGROUP
+
+Program entry point at 0000:0002
