@@ -1,16 +1,24 @@
-             /* Program 1 */
+    /* Programa 1
+    Autor: Ismael Flores Melendez
+    Boleta: 2017600691
+    Secuencia: 2NV60
+    Este programa: 
+        devuelve true si el predicado que se ingresa es verdadero
+        y el valor de la variable si el parametro que se pasa
+        cumple con algun predicado directo o referenciado
+    */
 
 domains
-    person, activity = symbol
+    persona, actividad = symbol
 
 predicates
-    likes(person,activity)
+    le_gusta(persona,actividad)
 
 clauses
-    likes(ellen,tennis).
-    likes(john,football).
-    likes(tom,baseball).
-    likes(eric,swimming).
-    likes(mark,tennis).
-    likes(bill,X) if likes(tom,X).
+    le_gusta(ellen,tenis).
+    le_gusta(john,americano).
+    le_gusta(tom,beisbol).
+    le_gusta(eric,natacion).
+    le_gusta(mark,tenis).
+    le_gusta(bill,X) if le_gusta(tom,X).
 
