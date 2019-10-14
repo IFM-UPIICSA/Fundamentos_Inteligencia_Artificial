@@ -1,25 +1,32 @@
-             /* Program 4 */
+    /* Program 4 
+    Autor: Ismael Flores Melendez
+    Boleta: 2017600691
+    Secuencia: 2NV60
+    Este programa: 
+        Deduce quien es la mejor opcion 
+        para la cita de Sophie
+    */
 domains
-    person = symbol
+    persona = symbol
 
 predicates
-    male(person)
-    smoker(person)
-    vegetarian(person)
-    sophie_could_date(person)
+    hombre(persona)
+    fumador(persona)
+    vegetariano(persona)
+    sophie_posible_cita(persona)
 
 goal
-    sophie_could_date(X) and
-    write("a possible date for sophie is ",X) and nl.
+    /*sophie_posible_cita(X) and
+    write("una posible cita para sophie es ",X) and nl and fail.*/
 
 clauses
-    male(joshua).
-    male(bill).
-    male(tom).
-    smoker(guiseppe).
-    smoker(tom).
-    vegetarian(joshua).
-    vegetarian(tom).
-    sophie_could_date(X) if male(X) and not(smoker(X)).
-    sophie_could_date(X) if male(X) and vegetarian(X).
+    hombre(joshua).
+    hombre(bill).
+    hombre(tom).
+    fumador(guiseppe).
+    fumador(tom).
+    vegetariano(joshua).
+    vegetariano(tom).
+    sophie_posible_cita(X) if hombre(X) and not(fumador(X)) and vegetariano(X).
+    /*sophie_posible_cita(X) if hombre(X) and vegetariano(X).*/
 
