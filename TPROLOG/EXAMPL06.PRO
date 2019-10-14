@@ -1,13 +1,20 @@
-                         /* Program 6 */
+       /* Program 6
+       Autor: Ismael Flores Melendez
+       Boleta: 2017600691
+       Secuencia: 2NV60
+       Este programa: 
+              Almacena los pasatiempos de las personas
+              y responde a consultas de los mismos
+    */
 domains
-       person, hobby = symbol
+       persona, pasa_tiempo = symbol
 predicates 
-       likes(person,hobby)
+       le_gusta(persona,pasa_tiempo)
 clauses
-       likes(ellen,reading).
-       likes(john,computers).
-       likes(john,badminton).
-       likes(leonard,badminton).
-       likes(eric,swimming).
-       likes(eric,reading).
+       le_gusta(ellen,leer).
+       le_gusta(john,computadoras).
+       le_gusta(john,badminton).
+       le_gusta(leonard,badminton).
+       le_gusta(eric,natacion).
+       le_gusta(eric,leer).
 
