@@ -1,15 +1,23 @@
-             /* Program 3 */
+    /* Programa 3 
+    Autor: Ismael Flores Melendez
+    Boleta: 2017600691
+    Secuencia: 2NV60
+    Este programa: 
+        Almacena informacion de alumnos y devuelve consultas
+        respecto a sus edades; ademas muestra las combinaciones
+        que puede haber entre alumnos de la misma edad
+    */
 
 domains
-    child = symbol
-    age   = integer
+    nino = symbol
+    edad   = integer
 
 predicates
-    pupil(child,age)
+    pupilo(nino,edad)
 
 clauses
-    pupil(peter,9).
-    pupil(paul,10).
-    pupil(chris,9).
-    pupil(susan,9).
+    pupilo(peter,9).
+    pupilo(paul,10).
+    pupilo(chris,9).
+    pupilo(susan,9).
 
