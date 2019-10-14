@@ -1,16 +1,23 @@
-            /* Program 9 */
+       /* Program 9 
+       Autor: Ismael Flores Melendez
+       Boleta: 2017600691
+       Secuencia: 2NV60
+       Este programa: 
+              Mueve el puntero del pront hacia 
+              las direcciones especificadas
+       */
 domains
-       row, column, step = integer
-       movement = up(step); down(step);
-                  left(step) ; right(step)
+       fila, columna, paso = integer
+       movimiento = arriba(paso); abajo(paso);
+                  derecha(paso) ; izquierda(paso)
 predicates
-       move_cursor(row,column,movement)
+       mover_puntero(fila,columna,movimiento)
 clauses
-       move_cursor(R,C,up(Step)) :-
+       mover_puntero(R,C,arriba(Step)) :-
                    R1=R-Step,cursor(R1,C).
-       move_cursor(R,C,down(Step)) :-
+       mover_puntero(R,C,abajo(Step)) :-
                    R1=R+Step,cursor(R1,C).
-       move_cursor(R,C,left(_)) :-
+       mover_puntero(R,C,derecha(_)) :-
                    C1=C-1,cursor(R,C1).
-       move_cursor(R,C,right(_)):-
+       mover_puntero(R,C,izquierda(_)):-
                    C1=C+1,cursor(R,C1).
