@@ -1,6 +1,13 @@
-            /* Program 10 */
+       /* Program 10
+       Autor: Ismael Flores Melendez
+       Boleta: 2017600691
+       Secuencia: 2NV60
+       Este programa: 
+              Calcula el factorial del
+              numero ingresado
+       */
 domains
-       n, f = integer
+       n, f = real
 predicates
        factorial(n,f)
 clauses
