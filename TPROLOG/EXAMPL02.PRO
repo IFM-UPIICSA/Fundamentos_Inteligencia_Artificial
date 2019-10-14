@@ -1,15 +1,22 @@
-      /* Program 2 */
+    /* Programa 2
+    Autor: Ismael Flores Melendez
+    Boleta: 2017600691
+    Secuencia: 2NV60
+    Este programa: 
+        Almacena informacion de autos y devuelve consultas
+        respecto a sus caracteristicas
+    */
 
 domains
-    brand, color  = symbol
-    age, price    = integer
-    mileage       = real
+    marca, color  = symbol
+    edad, precio    = integer
+    kilometraje       = real
 
 predicates
-    car(brand,mileage,age,color,price)
+    carro(marca,kilometraje,edad,color,precio)
 
 clauses
-    car(chrysler,130000,3,red,12000).
-    car(ford,90000,4,gray,25000).
-    car(datsun,8000,1,red,30000).
+    carro(chrysler,130000,3,rojo,12000).
+    carro(ford,90000,4,gris,25000).
+    carro(datsun,8000,1,rojo,30000).
 
