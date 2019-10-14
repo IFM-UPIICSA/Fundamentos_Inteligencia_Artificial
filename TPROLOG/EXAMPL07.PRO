@@ -1,14 +1,23 @@
-            /* Program 7 */
+       /* Program 7
+       Autor: Ismael Flores Melendez
+       Boleta: 2017600691
+       Secuencia: 2NV60
+       Este programa: 
+              Funciona como agenda telefonica, ya que
+              almacena numeros de telefono y los regresa
+              al buscarlos por nombre
+       */
+       
 predicates
-       reference(symbol,symbol)
-goal
-       write("Please type a name :"),
+       directorio(symbol,symbol)
+/*goal
+       write("Por favor, ingresa un nombre :"),
        readln(The_Name),
-       reference(The_Name,Phone_No),
-       write("The phone number is ",Phone_No).
+       directorio(The_Name,Phone_No),
+       write("El numero de telefono es: ",Phone_No) and nl.*/
 clauses
-       reference("Albert", "01-123456").
-       reference("Betty",  "01-569767").
-       reference("Carol",  "01-267400").
-       reference("Dorothy","01-191051").
+       directorio("Albert", "01-123456").
+       directorio("Betty",  "01-569767").
+       directorio("Carol",  "01-267400").
+       directorio("Dorothy","01-191051").
 
