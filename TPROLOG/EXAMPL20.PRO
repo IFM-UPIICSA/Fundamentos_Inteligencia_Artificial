@@ -1,10 +1,17 @@
-                /* Program  20  */
+/* Programa  20
+   Autor: Ismael Flores Melendez
+   Boleta: 2017600691
+   Secuencia: 2NV60
+   Este programa: 
+     Divide la lista que hayamos ingresado
+     en listas de tamaño de 5
+*/
 
 domains
-    integerlist = integer*
+    lista_numeros = integer*
 predicates
-    writelist(integerlist)
-    write5(integerlist,integer)
+    writelist(lista_numeros)
+    write5(lista_numeros,integer)
 clauses
     writelist( NL )   :- nl, write5( NL, 0 ), nl.
 
