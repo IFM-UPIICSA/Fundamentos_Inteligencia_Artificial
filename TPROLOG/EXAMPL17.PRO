@@ -1,11 +1,18 @@
-               /* Program  17*/
+/* Programa  17
+   Autor: Ismael Flores Melendez
+   Boleta: 2017600691
+   Secuencia: 2NV60
+   Este programa: 
+      Determina si los valores ingresados
+      son par o impar
+*/
 domains
-  d = pair(integer,integer) ; single(integer) ; none
+  d = par(integer,integer) ; individual(integer) ; ninguno
 predicates
-     equal(d,d)
+     igual(d,d)
 clauses
-     equal(X,X).
-     equal(single(4),pair(3,4)).
-     equal(pair(2,1),pair(2,1)).
-     equal(none,none).
+     igual(X,X).
+     igual(individual(4),par(3,4)).
+     igual(par(2,1),par(2,1)).
+     igual(ninguno,ninguno).
      
