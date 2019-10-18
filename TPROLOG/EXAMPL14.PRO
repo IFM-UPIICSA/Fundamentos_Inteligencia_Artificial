@@ -1,18 +1,26 @@
-             /* Program 14 */
+/* Program 14
+   Autor: Ismael Flores Melendez
+   Boleta: 2017600691
+   Secuencia: 2NV60
+   Este programa: 
+       Deduce los gustos de las 
+       personas con base en sus
+       demas gustos
+*/
 domains
-       name, thing = symbol
+       nombre, cosa = symbol
 predicates
-       likes(name,thing)
-       reads(name)
-       is_inquisitive(name)
+       le_gusta(nombre,cosa)
+       lee(nombre)
+       es_curioso(nombre)
 clauses
-       likes(john,wine).
-       likes(lance,ski_ing).
-       likes(Z,books) if
-                   reads(Z) and
-                   is_inquisitive(Z).
-       likes(lance,books).
-       likes(lance,films).
-       reads(john).
-       is_inquisitive(john).
+       le_gusta(john,vino).
+       le_gusta(lance,squiar).
+       le_gusta(Z,libros) if
+                   lee(Z) and
+                   es_curioso(Z).
+       le_gusta(lance,libros).
+       le_gusta(lance,peliculas).
+       lee(john).
+       es_curioso(john).
 
