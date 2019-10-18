@@ -1,28 +1,35 @@
-               /* Program 16 */
+/* Programa 16
+   Autor: Ismael Flores Melendez
+   Boleta: 2017600691
+   Secuencia: 2NV60
+   Este programa: 
+      Forma parejas con base en sus intereses
+      en comun, ademas de poder consultar los
+      que estan registrados
+*/
 domains
-    name,sex,interest = symbol
-    interests = interest*
+    nombre,genero,interes = symbol
+    intereses = interes*
 
 predicates
-    findpairs
-    person(name,sex,interests)
-    member(interest,interests)
-    common_interest(interests,interests,interest)
+    encontrar_pareja
+    persona(nombre,genero,intereses)
+    miembro(interes,intereses)
+    intereses_en_comun(intereses,intereses,interes)
 clauses
-    findpairs if person(Man, m, ILIST1 ) and
-          person( Woman, f, ILIST2 ) and
-          common_interest( ILIST1, ILIST2, _ ) and
-
-          write( Man, " might like  ",Woman ) and nl and
+    encontrar_pareja if persona(Man, m, ILIST1 ) and
+          persona( Woman, f, ILIST2 ) and
+          intereses_en_comun( ILIST1, ILIST2, _ ) and
+          write( Man, " podria gustarle  ",Woman ) and nl and
           fail.
-     findpairs:- write ("-----------end of the 1ist---").
+     encontrar_pareja:- write ("----------- fin de la lista ---").
 
-     common_interest( IL1, IL2, X ) if
-           member(X, IL1 ) and member(X, IL2) and !.
+     intereses_en_comun( IL1, IL2, X ) if
+           miembro(X, IL1 ) and miembro(X, IL2) and !.
 
-     person(tom,m,[travel,books,baseball]).
-     person(mary,f,[wine,books,swimming]).
+     persona(tom,m,[viajar,libros,beisbol]).
+     persona(mary,f,[vino,libros,natacion]).
 
-     member( X, [X|_] ).
-     member( X, [_|L] ) if member( X, L ).
+     miembro( X, [X|_] ).
+     miembro( X, [_|L] ) if miembro( X, L ).
 
