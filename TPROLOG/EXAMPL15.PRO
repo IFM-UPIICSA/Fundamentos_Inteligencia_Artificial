@@ -1,14 +1,21 @@
-            /* Program 15 */
+/* Programa 15
+   Autor: Ismael Flores Melendez
+   Boleta: 2017600691
+   Secuencia: 2NV60
+   Este programa: 
+      Responde a quien es
+      padre de quien
+*/
 domains
-      name = symbol
+      nombre = symbol
 predicates
-      father(name,name)
-      everybody
+      padre(nombre,nombre)
+      todos
 clauses
-      father(leonard,katherine).
-      father(carl,jason).
-      father(carl,marilyn).
-      everybody if
-              father(X,Y), 
-              write(X," is ",Y,"'s father\n") and      
-              fail.
+      padre(leonard,katherine).
+      padre(carl,jason).
+      padre(carl,marilyn).
+      todos if
+            padre(X,Y), 
+            write(X," is ",Y,"'s padre\n") and      
+            fail.
